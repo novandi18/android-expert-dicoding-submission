@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.DetailActivity">
+    
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/detail"
+            app:menu="@menu/detail_menu"
+            app:titleTextColor="@color/white"
+            app:titleCentered="true"
+            app:subtitleCentered="true"
+            app:subtitleTextColor="@color/white"
+            app:navigationIcon="@drawable/ic_back"
+            app:navigationIconTint="@color/white"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_detail_ayat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/ex_ayat"
+                android:textSize="24sp"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_detail_latin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/ex_latin"
+                app:layout_constraintTop_toBottomOf="@id/tv_detail_ayat"
+                android:textAlignment="textEnd"
+                android:paddingHorizontal="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/artinya"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/grey"/>
+
+            <TextView
+                android:id="@+id/tv_detail_artinya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/ex_artinya"
+                android:paddingHorizontal="20dp"
+                android:textSize="16sp"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <style name="Base.Theme.DoaHarianku" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/darkgreen</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="background">@color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Doa Harianku</string>
+    <string name="favorite">Favorit</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="detail">Detail</string>
+    <string name="artinya">Artinya :</string>
+
+    <!--  Tools: Text  -->
+    <string name="ex_artinya">Dengan menyebut nama Allah, aku hidup dan aku mati</string>
+    <string name="ex_latin">Bismikallaahumma ahyaa wa ammuut</string>
+    <string name="ex_ayat">بِسْمِكَ االلّٰهُمَّ اَحْيَا وَبِاسْمِكَ اَمُوْتُ</string>
+    <string name="ex_doa">Doa sebelum tidur</string>
+    <string name="something_wrong">Ada masalah, silahkan coba lagi</string>
+    <string name="empty">Tidak ada data</string>
+
+    <!--  Toast  -->
+    <string name="alert_set_fav">Berhasil menambahkan ke favorit</string>
+    <string name="alert_delete_fav">Berhasil menghapus dari favorit</string>
+</resources>
